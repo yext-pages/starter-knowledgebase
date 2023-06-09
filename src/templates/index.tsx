@@ -1,12 +1,12 @@
 /**
- * This is an example of how to create a static template that uses transformProps to retrieve data.
+ * !!!This is an example of how to create a static template that uses transformProps to retrieve data.
  */
 import React, { useEffect, useRef, useState } from "react";
 import {
   TemplateRenderProps,
   Template,
   TemplateConfig,
-  GetHeadConfig,
+  GetHeadConfig,s
 } from "@yext/pages";
 import "src/styles/index.css";
 import "src/index.css";
