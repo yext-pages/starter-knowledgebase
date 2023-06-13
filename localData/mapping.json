@@ -1,27 +1,10 @@
 {
 	"board": [
-		"boards__en__995361d31607861561112691f304918a.json",
-		"boards__en__3d36551461837e8c315f088cb1940a60.json",
-		"boards__en__5e27fa3b91ac80e41532c835d6944065.json",
-		"boards__en__c95db940d75ba7a804910b41e1e6f1e2.json",
-		"boards__en__9d9f3b26508143aa904ae354602c3a9a.json",
-		"boards__en__90aad3bd97a519e819a9880328d48426.json",
-		"boards__en__26c6fa4ce781993e5a8d15016b3e6a13.json",
-		"boards__en__623327ce9b2a658e581d0456fce7a982.json",
-		"boards__en__d90455392117194e3c1304774aaf1c10.json",
-		"boards__en__c3d1303b75ab0d9c540936a94e0a4a9d.json"
+		"boards__en__6b29498b19e1d574f1c1bc97761d9783.json",
+		"boards__en__916ed0c22862869a992edee69cdb87e8.json"
 	],
 	"folder": [
-		"folders__en__bd1277c18a261d5c973ed25e6078044b.json",
-		"folders__en__0bb4021c781444ea8e293ce6070bc200.json",
-		"folders__en__f0359de6abccf35bd9799af26333f3a9.json",
-		"folders__en__1f205d8d6f85579b2eef88ca8bfd3728.json",
-		"folders__en__c9819059b510fb57bfaf78af93564706.json",
-		"folders__en__6a422dba90e2d15710bd910218cc6b3b.json",
-		"folders__en__9b2663e0771e55c562cd5858c7901f7f.json",
-		"folders__en__56b2155246caaa79766331b4e8415186.json",
-		"folders__en__bcb5f655cbf5edf02c80212d489fa8c5.json",
-		"folders__en__1cddd976b3efc128f6d42e0d323c55d6.json"
+		"folders__en__b818d855bfca4df7a2112f3949cdfcdc.json"
 	],
 	"index": [
 		"cog-internal-feature-static-file-generation-index__en__cfcd208495d565ef66e7dff9f98764da.json"

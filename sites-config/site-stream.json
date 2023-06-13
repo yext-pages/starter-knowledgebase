@@ -1,39 +1,12 @@
 {
   "filter": {
-    "entityIds": ["guru-site-entity"]
+    "entityIds": ["board-Benefits"]
   },
   "fields": [
     "id",
     "uid",
     "meta",
-    "name",
-    "c_rootFolders.name",
-    "c_rootFolders.slug",
-    "c_highlightedCards.name",
-    "c_highlightedCards.meta",
-    "c_highlightedCards.body",
-    "c_highlightedCards.slug",
-    "c_highlightedCards.id",
-    "c_highlightedCards.uid",
-    "c_highlightedCards.c_shareCount",
-    "c_highlightedCards.c_guruViews",
-    "c_highlightedCards.c_tags",
-    "c_highlightedCards.c_lastUpdateDate",
-    "c_highlightedCards.c_dateCreated",
-    "c_highlightedCards.c_parentBoard.name",
-    "c_highlightedCards.c_parentBoard.slug",
-    "c_highlightedCards.c_parentBoard.c_boardParentFolder.name",
-    "c_highlightedCards.c_parentBoard.c_boardParentFolder.slug",
-    "c_highlightedCards.c_parentBoard.c_boardParentFolder.c_parentFolder.name",
-    "c_highlightedCards.c_parentBoard.c_boardParentFolder.c_parentFolder.slug",
-    "c_highlightedCards.c_parentBoard.c_boardParentFolder.c_parentFolder.c_parentFolder.name",
-    "c_highlightedCards.c_parentBoard.c_boardParentFolder.c_parentFolder.c_parentFolder.slug",
-    "c_highlightedCards.c_parentBoard.c_boardParentFolder.c_parentFolder.c_parentFolder.c_parentFolder.name",
-    "c_highlightedCards.c_parentBoard.c_boardParentFolder.c_parentFolder.c_parentFolder.c_parentFolder.slug",
-    "c_highlightedCards.c_parentBoard.c_boardParentFolder.c_parentFolder.c_parentFolder.c_parentFolder.c_parentFolder.name",
-    "c_highlightedCards.c_parentBoard.c_boardParentFolder.c_parentFolder.c_parentFolder.c_parentFolder.c_parentFolder.slug",
-    "c_highlightedCards.c_parentBoard.c_boardParentFolder.c_parentFolder.c_parentFolder.c_parentFolder.c_parentFolder.c_parentFolder.name",
-    "c_highlightedCards.c_parentBoard.c_boardParentFolder.c_parentFolder.c_parentFolder.c_parentFolder.c_parentFolder.c_parentFolder.c_parentFolder.slug"
+    "name"
   ],
   "localization": {
     "locales": ["en"],
