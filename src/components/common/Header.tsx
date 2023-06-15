@@ -16,14 +16,16 @@ export default function Header() {
 			<div className="container py-5 flex justify-between items-center">
 				<div className="flex items-stretch">
 					<Link className="flex items-center" href="https://telescope.yext.com">
-						<img className="Header-logo mr-1" src={logo} alt="" />
+					{/* Comment the below line back in to add your company's logo to the header */}
+						{/* <img className="Header-logo mr-1" src={logo} alt="" /> */}
 						<div className="flex items-stretch">
-							<div className="Heading Heading--head">
+							{/* <div className="Heading Heading--head">
 								Telescope
-							</div>
+							</div> */}
 						</div>
 					</Link>
-					<div className="w-[2px] bg-black ml-2 mr-2"></div>
+					{/* Comment the below line back in to add a vertical divider between "Knowledge Base" and your company's logo */}
+					{/* <div className="w-[2px] bg-black ml-2 mr-2"></div> */} 
 					<Link className="flex items-center" href="https://knowledge.telescope.yext.com">
 						<div className="Heading Heading--kb flex flex-col lg:flex-row self-center">
 							<span className="mr-2">
@@ -41,9 +43,12 @@ export default function Header() {
 				</Link>}
 
 				{isDesktop && <div className="flex gap-4">
-					<Link target="_blank" className="Link Link--inverse Link--header font-light" href="https://initiatives.telescope.yext.com">Initiatives</Link>
-					<Link target="_blank" className="Link Link--inverse Link--header font-light" href="https://hitchhikers.yext.com/community/">Hitchhikers</Link>
-					<Link target="_blank" className="Link Link--inverse Link--header font-light" href="https://forms.gle/Hvb1Rbi6P2PaSR437">Feedback</Link>
+					{/*You comment in the below two lines and swap out the links to add additional buttons to your header.*/}
+					{/* <Link target="_blank" className="Link Link--inverse Link--header font-light" href="https://initiatives.telescope.yext.com">Initiatives</Link> */} 
+					{/* <Link target="_blank" className="Link Link--inverse Link--header font-light" href="https://hitchhikers.yext.com/community/">Hitchhikers</Link> */}
+					{/*You can swap out the below Google Forms link and Yext.com link with your own form for feedback submission/website's home page.*/}
+					<Link target="_blank" className="Link Link--inverse Link--header font-light" href="https://www.yext.com/">Home</Link>
+					<Link target="_blank" className="Link Link--inverse Link--header font-light" href="https://www.google.com/forms/about/">Feedback</Link>
 					<Link target="_blank" className="Link Link--inverse Link--header font-light" href="slack://channel?team=TUNK1C0C8&id=C02MY9K3SL9">Help</Link>
 				</div>}
 			</div>
