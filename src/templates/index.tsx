@@ -331,11 +331,10 @@ const IndexInternal: Template<TemplateRenderProps> = (data) => {
             <div className="lg:container h-full">
               <div className="mx-10 lg:mx-0 px-6 lg:px-8 border-l py-6 lg:py-16 border-r border-solid border-brand-gray-400">
                 <h1 className="Index-title Heading mb-4">
-                  Welcome to the Telescope Knowledge Base
+                  Welcome to the Knowledge Base
                 </h1>
                 <h3 className="Heading Heading--flag mb-6">
-                  Use the search to find the info you need or use the sections
-                  below to find cards relevant to you!
+                  Use the search bar to find the info you need!
                 </h3>
                 <SearchBar
                   placeholder="Search or Quick Find with ⌘ + K "
@@ -347,7 +346,7 @@ const IndexInternal: Template<TemplateRenderProps> = (data) => {
                     window.location.href = `${relativePrefixToRoot}${SEARCH_PATH}?query=${query}`;
                   }}
                 />
-                <button
+                {/* <button
                   onClick={scrollToBottom}
                   className="flex items-center mt-6 ml-auto mr-auto md:ml-0 md:mr-0"
                 >
@@ -355,7 +354,7 @@ const IndexInternal: Template<TemplateRenderProps> = (data) => {
                     Jump to Folders
                   </span>{" "}
                   <FaArrowDown className="ml-2" />
-                </button>
+                </button> */}
               </div>
             </div>
             <div className="border-b border-t border-solid border-brand-gray-400">
@@ -365,7 +364,7 @@ const IndexInternal: Template<TemplateRenderProps> = (data) => {
             </div>
           </div>
 
-          <SplitLayout
+          {/* <SplitLayout
             className={layoutClass}
             left={
               <CSSTransition
@@ -452,7 +451,7 @@ const IndexInternal: Template<TemplateRenderProps> = (data) => {
                 </div>
               </CSSTransition>
             }
-          />
+          /> */}
         </div>
 
         {_site.c_rootFolders && <ExploreYext folders={_site.c_rootFolders} />}
