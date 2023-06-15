@@ -120,7 +120,7 @@ const SearchInternal: Template<TemplateRenderProps> = (data) => {
   const [searchParams, setSearchParams] = useSearchParams();
   const onSearch = (searchEventData: {
     verticalKey?: string,
-    query?: string,
+    query?: string
   }) => {
     const { query } = searchEventData;
     if (query) {
@@ -179,7 +179,8 @@ const SearchInternal: Template<TemplateRenderProps> = (data) => {
         <ToastContainer autoClose={1500} />
         <div className="container">
           <div className="flex justify-center items-center py-8">
-            <img className="mr-4" src={logo} alt="" width={93} height={93} />
+            {/* Comment in the below line to add your company's logo to the header of the Search Results Page /> */}
+            {/* <img className="mr-4" src={logo} alt="" width={93} height={93} /> */}
             <h1 className="Heading Heading--lead">
               Knowledge Base
             </h1>
