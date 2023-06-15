@@ -39,9 +39,9 @@ import { Link } from "@yext/pages/components";
 import { providePagesAnalytics } from "@yext/analytics";
 
 
-declare global {
-  interface Window { YEXT_AUTH: {visitor: {id: string, telescopeEmail: string}}; }
-}
+// declare global {
+//   interface Window { YEXT_AUTH: {visitor: {id: string, telescopeEmail: string}}; }
+// }
 
 /**
  * Not required depending on your use case.
@@ -181,7 +181,7 @@ const SearchInternal: Template<TemplateRenderProps> = (data) => {
           <div className="flex justify-center items-center py-8">
             <img className="mr-4" src={logo} alt="" width={93} height={93} />
             <h1 className="Heading Heading--lead">
-              Telescope
+              Knowledge Base
             </h1>
           </div>
           <div className="flex justify-center">

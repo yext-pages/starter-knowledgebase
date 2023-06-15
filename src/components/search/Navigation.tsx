@@ -14,9 +14,9 @@ export default function Navigation(props: NavigationProps) {
 	return (
 		<div className="flex w-full items-center justify-start mb-[1px]">
 			<div className="Button cursor-default font-bold p-4 border-b-4 border-solid border-black">Knowledge Base</div>
-			<Link className="Button p-4 border-b-4 border-solid hover:border-brand-gray-300 border-white" target="_blank" href={`https://telescope.yext.com/search?query=${query}`}>
+			{/* <Link className="Button p-4 border-b-4 border-solid hover:border-brand-gray-300 border-white" target="_blank" href={`https://telescope.yext.com/search?query=${query}`}>
 				Telescope <FaExternalLinkAlt className="ml-2" size={12}/>
-			</Link>
+			</Link> */}
 		</div>
 	)
 }
