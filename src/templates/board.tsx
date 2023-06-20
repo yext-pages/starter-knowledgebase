@@ -192,7 +192,7 @@ const BoardInternal: Template<TemplateRenderProps> = (data) => {
   const fallbackBoardDescription = 
     `# Welcome to the ${name} board
 
-This board does not have a description. To add a description, visit the [entity page in the knowledge graph](https://www.yext.com/s/3151361/entity/edit3?entityIds=${uid}).
+This board does not have a description.
     `;
 
   const cards: CardProfile[] = c_cards.filter((card: CardProfile) => card.c_status === "PUBLISHED");
