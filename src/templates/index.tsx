@@ -6,7 +6,7 @@ import {
   TemplateRenderProps,
   Template,
   TemplateConfig,
-  GetHeadConfig,s
+  GetHeadConfig,
 } from "@yext/pages";
 import "src/styles/index.css";
 import "src/index.css";
@@ -14,10 +14,10 @@ import { SearchBar } from "@yext/search-ui-react";
 import { CardProfile, SiteProfile } from "src/types/entities";
 import ExploreYext from "src/components/ExploreYext";
 import { defaultHeadConfig } from "src/common/head";
-import Section from "src/components/common/Section";
-import List from "src/components/common/TileList";
+// import Section from "src/components/common/Section";
+// import List from "src/components/common/TileList";
 import { CustomBreadcrumbs } from "@yext/sites-react-components";
-import Card from "src/components/common/Card";
+// import Card from "src/components/common/Card";
 import classNames from "classnames";
 import useUser from "src/common/useUser";
 import { getRuntime } from "@yext/pages/util";
@@ -30,17 +30,17 @@ import {
 } from "src/common/consts";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { BoardTile, CardTile } from "src/components/home/Tile";
+// import { BoardTile, CardTile } from "src/components/home/Tile";
 import { useBreakpoint } from "src/common/useBreakpoints";
-import { SplitLayout } from "src/components/search/SplitLayout";
+// import { SplitLayout } from "src/components/search/SplitLayout";
 import { BrowserRouter } from "react-router-dom";
-import { CSSTransition } from "react-transition-group";
+// import { CSSTransition } from "react-transition-group";
 import { Main, shiftMain, unshiftMain } from "src/components/Main";
 import "src/styles/search.css";
 import { useSwipeRight } from "src/common/useSwipeRight";
 import { Routes } from "src/common/routes";
 import "react-cmdk/dist/cmdk.css";
-import { FaArrowDown } from "react-icons/fa";
+// import { FaArrowDown } from "react-icons/fa";
 import { useTemplateData } from "src/common/useTemplateData";
 import { isProduction } from "@yext/pages/util";
 import { providePagesAnalytics } from "@yext/analytics";
@@ -100,9 +100,9 @@ const Index: Template<TemplateRenderProps> = (data) => {
       referrer: window.document.referrer || "",
       siteId: data.document.siteId as number,
     });
-    if (window?.YEXT_AUTH?.visitor) {
-      pagesAnalytics.setVisitor(window.YEXT_AUTH.visitor);
-    }
+    // if (window?.YEXT_AUTH?.visitor) {
+    //   pagesAnalytics.setVisitor(window.YEXT_AUTH.visitor);
+    // }
     pagesAnalytics.pageView();
   }, []);
 
@@ -115,12 +115,12 @@ const Index: Template<TemplateRenderProps> = (data) => {
   );
 };
 
-function scrollToBottom() {
-  window.scrollTo({
-    top: document.body.scrollHeight,
-    behavior: "smooth",
-  });
-}
+// function scrollToBottom() {
+//   window.scrollTo({
+//     top: document.body.scrollHeight,
+//     behavior: "smooth",
+//   });
+// }
 
 const IndexInternal: Template<TemplateRenderProps> = (data) => {
   const _site = data.document._site as SiteProfile;

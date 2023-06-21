@@ -26,7 +26,7 @@ export default function Header() {
 					</Link>
 					{/* Comment the below line back in to add a vertical divider between "Knowledge Base" and your company's logo */}
 					{/* <div className="w-[2px] bg-black ml-2 mr-2"></div> */} 
-					<Link className="flex items-center" href="https://knowledge.telescope.yext.com">
+					<Link className="flex items-center" href="http://localhost:5173/index.html"> 
 						<div className="Heading Heading--kb flex flex-col lg:flex-row self-center">
 							<span className="mr-2">
 								Knowledge
