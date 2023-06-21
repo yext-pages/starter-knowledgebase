@@ -21,14 +21,14 @@ import 'react-toastify/dist/ReactToastify.css';
 import { usePageSetupEffect } from "src/common/usePageSetupEffect";
 import { BrowserRouter, useSearchParams } from "react-router-dom";
 import { getRuntime, isProduction } from "@yext/pages/util";
-import { getSearchProviderConfig, GURU_VERTICAL_KEY, SEARCH_PATH } from "src/common/consts";
+import { getSearchProviderConfig, KB_VERTICAL_KEY, SEARCH_PATH } from "src/common/consts";
 import { BoardTile, CardTile } from "src/components/home/Tile";
 import "src/styles/search.css";
 import { isCard } from "src/common/entities";
 import { useBreakpoint } from "src/common/useBreakpoints";
 import { SplitLayout } from "src/components/search/SplitLayout";
 import { MdClose } from "react-icons/md";
-import logo from "src/assets/images/logo.svg";
+// import logo from "src/assets/images/logo.svg";
 import Navigation from "src/components/search/Navigation";
 import { CSSTransition } from "react-transition-group";
 import { Main, shiftMain, unshiftMain } from "src/components/Main";
@@ -116,7 +116,7 @@ const SearchInternal: Template<TemplateRenderProps> = (data) => {
   const lastQuery = useSearchState(state => state.query.mostRecentSearch);
   const urlSelectedCard = useSelectedCard();
 
-  usePageSetupEffect(GURU_VERTICAL_KEY);
+  usePageSetupEffect(KB_VERTICAL_KEY);
   const [searchParams, setSearchParams] = useSearchParams();
   const onSearch = (searchEventData: {
     verticalKey?: string,
