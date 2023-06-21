@@ -12,7 +12,7 @@ interface CommandPaletteProps {
 
 function validResultFilter(result: AutocompleteResult) {
   if (!result.relatedItem) return false;
-  if (['card', 'ce_folder'].includes(result.relatedItem.entityType || '')) {
+  if (['ce_knowledgecard', 'ce_knowledgefolder'].includes(result.relatedItem.entityType || '')) {
     return result.relatedItem.rawData.c_status === "Published";
   }
 
@@ -46,12 +46,12 @@ function CustomCommandPaletteInternal(props: CommandPaletteProps) {
       const suggestions = await actions.executeFilterSearch(search, true, [
         {
           fieldApiName: "name",
-          entityType: "board",
+          entityType: "ce_knowledgeboard",
           fetchEntities: true
         },
         {
           fieldApiName: "name",
-          entityType: "card",
+          entityType: "ce_knowledgecard",
           fetchEntities: true
         },
         {
@@ -67,15 +67,15 @@ function CustomCommandPaletteInternal(props: CommandPaletteProps) {
 
   function Icon(result: Result | undefined) {
     if (!result) return null;
-    if (result.entityType === "board") return <FaBook />
-    if (result.entityType === "ce_folder") return <FaFolder />
+    if (result.entityType === "ce_knowledgeboard") return <FaBook />
+    if (result.entityType === "ce_knowledgefolder") return <FaFolder />
     return <FaInfoCircle />
   }
 
   function getUrl(result: Result | undefined) {
     if (!result) return '';
-    if (result.entityType === "board" || result.entityType === "ce_folder") return `${props.relativePrefixToRoot}${result.rawData.slug}`;
-    return `${props.relativePrefixToRoot}board/${(result.rawData.c_parentBoard as {entityId: string, name: string}[])?.[0].entityId.toLowerCase()}?selected=${result.id}`
+    if (result.entityType === "ce_knowledgeboard" || result.entityType === "ce_knowledgefolder") return `${props.relativePrefixToRoot}${result.rawData.slug}`;
+    return `${props.relativePrefixToRoot}ce_knowledgeboard/${(result.rawData.c_parentBoard as {entityId: string, name: string}[])?.[0].entityId.toLowerCase()}?selected=${result.id}`
   }
 
   return (
