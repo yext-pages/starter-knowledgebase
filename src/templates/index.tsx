@@ -125,7 +125,7 @@ const Index: Template<TemplateRenderProps> = (data) => {
 const IndexInternal: Template<TemplateRenderProps> = (data) => {
   const _site = data.document._site as SiteProfile;
   const { relativePrefixToRoot } = data;
-  const { c_highlightedCards } = _site;
+  // const { c_highlightedCards } = _site;
   const [cardsCreatedByCurrentUser, setCardsCreatedByCurrentUser] = useState<
     CardProfile[]
   >([]);
@@ -274,11 +274,11 @@ const IndexInternal: Template<TemplateRenderProps> = (data) => {
   }
 
   const sections = [
-    {
-      title: "Highlighted Cards from Yext",
-      cards: c_highlightedCards,
-      isRemo: false,
-    },
+    // {
+    //   title: "Highlighted Cards from Yext",
+    //   cards: c_highlightedCards,
+    //   isRemo: false,
+    // },
     {
       title: "Recently Viewed Cards",
       cards: recentlyViewedCards,
@@ -454,7 +454,7 @@ const IndexInternal: Template<TemplateRenderProps> = (data) => {
           /> */}
         </div>
 
-        {_site.c_rootFolders && <ExploreYext folders={_site.c_rootFolders} />}
+        {/* {_site.c_rootFolders && <ExploreYext folders={_site.c_rootFolders} />} */}
       </div>
     </>
   );
