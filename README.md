@@ -1,6 +1,6 @@
-# SITE-STARTER-REACT-BASIC
+# STARTER-KNOWLEDGE BASE
 
-This repository provides a basic example of how to start developing a React site on the Yext Sites system.
+This repository provides a basic example of how to start developing a React site using the Knowledge Base Starter.
 
 ## Getting Started
 
