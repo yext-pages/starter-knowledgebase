@@ -23,7 +23,8 @@ export default function CustomCommandPalette(props: CommandPaletteProps) {
   // The CommandPalette needs its own headless provider so it doesn't interfere with the one on the search page
   const searcher = provideHeadless({
     ...getSearchProviderConfig(props.locale),
-    verticalKey: 'kb_autocomplete',
+    verticalKey: 'cards',
+    // verticalKey: 'kb_autocomplete',
     headlessId: 'cmd_pallette',
   });
 
@@ -46,19 +47,19 @@ function CustomCommandPaletteInternal(props: CommandPaletteProps) {
       const suggestions = await actions.executeFilterSearch(search, true, [
         {
           fieldApiName: "name",
-          entityType: "ce_knowledgeboard",
-          fetchEntities: true
-        },
-        {
-          fieldApiName: "name",
           entityType: "ce_knowledgecard",
           fetchEntities: true
-        },
-        {
-          fieldApiName: "name",
-          entityType: "ce_folder",
-          fetchEntities: true
-        }
+        } // deleted a comma
+        // {
+        //   fieldApiName: "name",
+        //   entityType: "ce_knowledgecard",
+        //   fetchEntities: true
+        // },
+        // {
+        //   fieldApiName: "name",
+        //   entityType: "ce_folder",
+        //   fetchEntities: true
+        // }
       ]);
       setItems((suggestions?.sections?.[0]?.results || []).filter(validResultFilter))
     }
