@@ -16,11 +16,11 @@
     "generate-notices": "generate-license-file --input package.json --output ./THIRD-PARTY-NOTICES --overwrite"
   },
   "engines": {
-    "node": ">=17"
+    "node": "18"
   },
   "dependencies": {
     "@yext/custom-field-debugger": "2.0.6",
-    "@yext/pages": "^1.0.0-beta.22",
+    "@yext/pages": "^1.0.0-beta.26",
     "@yext/schema-wrapper": "1.0.1",
     "@yext/search-headless-react": "^2.0.0",
     "@yext/search-ui-react": "^1.0.0",
