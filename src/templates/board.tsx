@@ -329,9 +329,9 @@ This board does not have a description.
           </div>
           <div className="container">
             <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between py-4">
-              <h1 className="flex items-start lg:items-center Heading Heading--head mb-4 lg:mb-0">
+              {/* <h1 className="flex items-start lg:items-center Heading Heading--head mb-4 lg:mb-0">
                 <FaBook className="mr-4 mt-1 lg:mt-0" /> <div>{name}</div>
-              </h1>
+              </h1> */}
 
               <div className="flex items-center gap-2 lg:gap-4 mb-4 lg:mb-0">
                 <button className={"Button Button--primary"} onClick={handleFavorite}>

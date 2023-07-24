@@ -153,10 +153,10 @@ const FolderInternal: Template<TemplateRenderProps> = (data) => {
                 <ol className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
                   {folders.map(folder => (
                     <li className="border border-solid border-brand-gray-400" key={folder.slug}>
-                      <Link className="hover:bg-brand-gray-100 h-full w-full flex flex-col items-center justify-center py-9 px-4 text-center" href={relativePrefixToRoot + folder.slug}>
+                      {/* <Link className="hover:bg-brand-gray-100 h-full w-full flex flex-col items-center justify-center py-9 px-4 text-center" href={relativePrefixToRoot + folder.slug}>
                         <AiTwotoneFolderOpen className="mb-4" size={75} />
                         {folder.name}
-                      </Link>
+                      </Link> */}
                     </li>
                   ))}
                 </ol>
@@ -174,7 +174,7 @@ const FolderInternal: Template<TemplateRenderProps> = (data) => {
                   return (
                     <li className="border border-solid border-brand-gray-400" key={board.slug}>
                       <Link className="hover:bg-brand-gray-100 h-full w-full flex lg:flex-col items-center p-6 text-center" href={relativePrefixToRoot + board.slug}>
-                        <FaBook className="mb-4 mr-5" size={iconSize} />
+                        {/* <FaBook className="mb-4 mr-5" size={iconSize} /> */}
                         <div className="flex flex-col items-start">
                           <div className="Heading Heading--flag">
                             {board.name}
