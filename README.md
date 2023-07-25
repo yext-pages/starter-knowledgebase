@@ -22,7 +22,7 @@ This repository provides a basic example of how to start developing a React site
 git clone git@github.com:yext-pages/Guru.git
 cd Guru
 npm install
-yext init  3151361 # <- the account id for telescope, contact dfesjian@yext.com if you need access
+yext init  YOUR ACCOUNT ID # <- The account ID for Knowledge Base
 npm run dev
 ```
 

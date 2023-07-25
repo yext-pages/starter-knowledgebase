@@ -78,7 +78,6 @@ export const config: TemplateConfig = {
       "c_cards.c_tags",
       "c_cards.c_shareCount",
       "c_cards.c_lastUpdateDate",
-      "c_cards.c_guruViews",
       "c_cards.c_dateCreated",
       "c_cards.c_parentBoard.name",
       "c_cards.c_parentBoard.slug",
@@ -364,7 +363,7 @@ This board does not have a description.
                   {isDesktop && renderFilterAndSortControls()}
                   {!filteredCards.length && (
                     <div>
-                      No cards on this board. Go to the <Link className="Link Link--underline" href="https://www.yext.com/s/3151361/entities2">Knowledge Graph</Link> to add or update cards.
+                      No cards on this board. Go to your <Link className="Link Link--underline" href="https://www.yext.com/s/3151361/entities2">Content</Link> to add or update cards.
                     </div>
                   )}
                   <List

@@ -44,7 +44,6 @@ export interface CardProfile extends BaseProfile {
   c_parentBoard?: BoardProfile[];
   c_dateCreated?: string
   c_lastUpdateDate?: string
-  c_guruViews?: string
   c_tags?: string[]
   c_status?: "PUBLISHED" | "DRAFT" | "ARCHIVED"
   s_snippet?: string;

@@ -185,8 +185,6 @@ const IndexInternal: Template<TemplateRenderProps> = (data) => {
         v: "20221001",
         api_key: STREAMS_API_KEY,
         limit: "5",
-        c_guruViews__gt: "0",
-        $sortBy: "c_guruViews",
         c_team: team,
       });
       const popularCards = await fetch(`${endpoint}${params.toString()}`)
@@ -196,12 +194,7 @@ const IndexInternal: Template<TemplateRenderProps> = (data) => {
     }
 
     async function fetchCardsFromRemo() {
-      /**
-       * step 1: determine which arm of experiment yext-user is in
-       * step 2: query remo endpoint and store the results in state
-       */
       const endpoint = "https://recommendations.optimizelocation.com/models";
-      //logic to determine which aggregate to query based on user identity
       let visitorVal = window?.YEXT_AUTH?.visitor.id || "0"
       visitorVal = visitorVal.replace(/\D/g, "");
       const visitorValue =

@@ -73,28 +73,28 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = (data) => {
 const Search: Template<TemplateRenderProps> = (data) => {
   if (getRuntime().isServerSide) return <></>
 
-  // React.useEffect(() => {
-  //   const inProduction =
-  //     isProduction(data.document.siteInternalHostName) ||
-  //     isProduction(data.document.siteDomain);
+  React.useEffect(() => {
+    const inProduction =
+      isProduction(data.document.siteInternalHostName) ||
+      isProduction(data.document.siteDomain);
 
-  //   const pagesAnalytics = providePagesAnalytics({
-  //     businessId: data.document.businessId as number,
-  //     debug: !inProduction,
-  //     pageType: {
-  //       name: "static",
-  //       staticPageId: "search"
-  //     },
-  //     pageUrl: window.location.href,
-  //     production: inProduction,
-  //     referrer: window.document.referrer || "",
-  //     siteId: data.document.siteId as number,
-  //   });
-  //   if (window?.YEXT_AUTH?.visitor) {
-  //     pagesAnalytics.setVisitor(window.YEXT_AUTH.visitor);
-  //   }
-  //   pagesAnalytics.pageView();
-  // }, []);
+    const pagesAnalytics = providePagesAnalytics({
+      businessId: data.document.businessId as number,
+      debug: !inProduction,
+      pageType: {
+        name: "static",
+        staticPageId: "search"
+      },
+      pageUrl: window.location.href,
+      production: inProduction,
+      referrer: window.document.referrer || "",
+      siteId: data.document.siteId as number,
+    });
+    if (window?.YEXT_AUTH?.visitor) {
+      pagesAnalytics.setVisitor(window.YEXT_AUTH.visitor);
+    }
+    pagesAnalytics.pageView();
+  }, []);
 
   return (
     <BrowserRouter>

@@ -47,7 +47,6 @@ const CardRow = (props: { children: React.ReactNode; className?: string }) => {
 export default function Card(props: CardProps) {
   const { card, relativePrefixToRoot } = props;
   const {
-    c_guruViews = 0,
     c_shareCount = 0,
     c_dateCreated,
     c_lastUpdateDate,
@@ -68,14 +67,12 @@ export default function Card(props: CardProps) {
 
 	const mobileInfoSections = [
 		{title: "Created On", children: createdDate},
-		{title: "", children: `${c_guruViews} Views`},
 		{title: "", children: `${c_shareCount} Shares`},
 	];
 
 	const tabletInfoSections = [
 		{title: "Created On", children: createdDate},
 		{title: "Last Updated", children: updatedDate},
-		{title: "", children: `${c_guruViews} Views`},
 		{title: "", children: `${c_shareCount} Shares`},
 	];
 
@@ -180,7 +177,6 @@ export default function Card(props: CardProps) {
 				{teamName && <h3 className="Heading Heading--brow my-2 text-brand-gray-500">{teamName}</h3>}
 				<h2 className="Heading Heading--head">{card.name}</h2>
 				{isDesktop && <div className="flex gap-2 mt-2 rounded-md">
-					<div>{`${c_guruViews} Views`}</div>
 					<div>|</div>
 					<div>{`${c_shareCount} Shares`}</div>
 				</div>}
