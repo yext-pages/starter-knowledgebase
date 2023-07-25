@@ -81,7 +81,8 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = (data) => {
  */
 const Index: Template<TemplateRenderProps> = (data) => {
   const document = data.document;
-  if (getRuntime().isServerSide) return <></>;
+  // if (getRuntime().isServerSide) return <></>;
+  if (getRuntime().name !== "browser") return <></>
 
   React.useEffect(() => {
     const inProduction =
