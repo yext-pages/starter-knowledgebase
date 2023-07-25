@@ -63,10 +63,10 @@ export interface BoardProfile extends BaseProfile {
   c_boardParentFolder?: FolderProfile[];
 }
 
-// export interface SiteProfile {
-//   c_rootFolders: BasicRelationshipData[];
-//   c_highlightedCards: CardProfile[];
-// }
+export interface SiteProfile {
+  c_rootFolders: BasicRelationshipData[];
+  c_highlightedCards: CardProfile[];
+}
 
 export interface YexterProfile extends BaseProfile {
   c_starredBoards?: string[];
