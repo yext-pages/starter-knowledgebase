@@ -1,5 +1,5 @@
-const API_KEY = "9c217d4ed871f6a5ddd2cff38675787f";
-const BASE_URL = "https://api.yext.com/v2/accounts/me/entities/";
+const API_KEY = "9c217d4ed871f6a5ddd2cff38675787f"; // add your API Key
+const BASE_URL = "https://api.yext.com/v2/accounts/me/entities/"; // Add your base URL
 
 interface PluginInput {
   urlArgs: {
