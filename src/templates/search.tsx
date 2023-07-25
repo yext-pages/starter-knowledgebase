@@ -71,7 +71,8 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = (data) => {
  * The props passed in here are the direct result from `transformProps`
  */
 const Search: Template<TemplateRenderProps> = (data) => {
-  if (getRuntime().isServerSide) return <></>
+  // if (getRuntime().isServerSide) return <></>
+  if (getRuntime().name !== "browser") return <></>
 
   React.useEffect(() => {
     const inProduction =
