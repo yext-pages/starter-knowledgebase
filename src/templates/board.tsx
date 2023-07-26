@@ -156,7 +156,7 @@ const Board: Template<TemplateRenderProps> = (data) => {
   
   return (
     <>
-      {!getRuntime().isServerSide && (
+      {getRuntime().name === "browser" && (
         <BrowserRouter>
           <Main data={data}>
             <BoardInternal {...data} />
