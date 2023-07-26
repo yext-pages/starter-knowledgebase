@@ -76,7 +76,7 @@ function CustomCommandPaletteInternal(props: CommandPaletteProps) {
   function getUrl(result: Result | undefined) {
     if (!result) return '';
     if (result.entityType === "ce_knowledgeboard" || result.entityType === "ce_knowledgefolder") return `${props.relativePrefixToRoot}${result.rawData.slug}`;
-    return `${props.relativePrefixToRoot}ce_knowledgeboard/${(result.rawData.c_parentBoard as {entityId: string, name: string}[])?.[0].entityId.toLowerCase()}?selected=${result.id}`
+    return `${props.relativePrefixToRoot}board/${(result.rawData.c_parentBoard as {entityId: string, name: string}[])?.[0].entityId.toLowerCase()}?selected=${result.id}`
   }
 
   return (
