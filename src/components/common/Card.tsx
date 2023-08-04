@@ -140,9 +140,7 @@ export default function Card(props: CardProps) {
 				</CardRow>
 				<CardRow className="">
 					<div className="Card-content h-full">
-						<Markdown>
-							{card.body || ''}
-						</Markdown>
+						<div dangerouslySetInnerHTML={{__html: card.body_richtext_v2.html}}></div>
 					</div>
 				</CardRow>
 				<CardRow>
@@ -184,9 +182,7 @@ export default function Card(props: CardProps) {
 			<CardRow className="overflow-y-hidden">
 				<div className="h-full flex flex-col">
 					<div className="overflow-y-scroll h-full flex flex-col justify-between">
-						<Markdown>
-							{card.body || ''}
-						</Markdown>
+						<div dangerouslySetInnerHTML={{__html: card.body_richtext_v2.html}}></div>
 
 						{isTablet && !isDesktop && <div className="flex justify-end gap-2">
 							<button className="Button Button--primary" onClick={handleShare}>

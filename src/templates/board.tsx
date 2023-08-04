@@ -72,6 +72,7 @@ export const config: TemplateConfig = {
       "c_cards.slug",
       "c_cards.meta",
       "c_cards.body",
+      "c_cards.body_richtext_v2.html",
       "c_cards.id",
       "c_cards.uid",
       "c_cards.c_status",
