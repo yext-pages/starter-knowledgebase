@@ -38,6 +38,9 @@ export interface FolderProfile extends BaseProfile {
 
 export interface CardProfile extends BaseProfile {
   body: string;
+  body_richtext_v2: {
+    html: string
+  }
   id: string;
   slug: string;
   c_shareCount?: number;
