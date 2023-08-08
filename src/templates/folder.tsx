@@ -153,10 +153,10 @@ const FolderInternal: Template<TemplateRenderProps> = (data) => {
                 <ol className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
                   {folders.map(folder => (
                     <li className="border border-solid border-brand-gray-400" key={folder.slug}>
-                      {/* <Link className="hover:bg-brand-gray-100 h-full w-full flex flex-col items-center justify-center py-9 px-4 text-center" href={relativePrefixToRoot + folder.slug}>
+                      <Link className="hover:bg-brand-gray-100 h-full w-full flex flex-col items-center justify-center py-9 px-4 text-center" href={relativePrefixToRoot + folder.slug}>
                         <AiTwotoneFolderOpen className="mb-4" size={75} />
                         {folder.name}
-                      </Link> */}
+                      </Link>
                     </li>
                   ))}
                 </ol>
