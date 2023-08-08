@@ -49,7 +49,7 @@ export default function Header() {
 					{/*You can swap out the below Google Forms link and Yext.com link with your own form for feedback submission/website's home page.*/}
 					<Link target="_blank" className="Link Link--inverse Link--header font-light" href="https://www.yext.com/">Home</Link>
 					<Link target="_blank" className="Link Link--inverse Link--header font-light" href="https://www.google.com/forms/about/">Feedback</Link>
-					<Link target="_blank" className="Link Link--inverse Link--header font-light" href="slack://channel?team=TUNK1C0C8&id=C02MY9K3SL9">Help</Link>
+					<Link target="_blank" className="Link Link--inverse Link--header font-light" href="https://www.google.com/forms/about/">Help</Link>
 				</div>}
 			</div>
 		</header>
