@@ -67,11 +67,10 @@ export const config: TemplateConfig = {
       "meta",
       "name",
       "slug",
-      "richTextDescription",
+      "body_richtext_v2",
       "c_cards.name",
       "c_cards.slug",
       "c_cards.meta",
-      "c_cards.body",
       "c_cards.body_richtext_v2.html",
       "c_cards.id",
       "c_cards.uid",
@@ -178,7 +177,7 @@ const Board: Template<TemplateRenderProps> = (data) => {
  */
 const BoardInternal: Template<TemplateRenderProps> = (data) => {
   const profileDocument = data.document as BoardProfile;
-  const { name, richTextDescription, c_cards = [], uid, id } = data.document;
+  const { name, body_richtext_v2, c_cards = [], uid, id } = data.document;
   const urlSelectedCard = useSelectedCard();
   const { relativePrefixToRoot } = data;
   const [favorite, setFavorite] = useState(false);
@@ -349,7 +348,7 @@ This board does not have a description.
                 </Link>
               </div>
 
-              {!isDesktop && <Markdown>{richTextDescription || ''}</Markdown>}
+              {!isDesktop && <Markdown>{body_richtext_v2 || ''}</Markdown>}
             </div>
           </div>
         </div>
@@ -407,7 +406,7 @@ This board does not have a description.
                 />}
               </div>
             </CSSTransition>
-            {isDesktop && !cardViewOpen && <div className="Board-description"><Markdown>{richTextDescription || fallbackBoardDescription}</Markdown></div>}
+            {isDesktop && !cardViewOpen && <div className="Board-description"><Markdown>{body_richtext_v2 || fallbackBoardDescription}</Markdown></div>}
           </div>
         </div>
       </div>

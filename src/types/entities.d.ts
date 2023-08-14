@@ -61,7 +61,7 @@ interface LinkedCardInfo {
 
 export interface BoardProfile extends BaseProfile {
   slug?: string
-  richTextDescription?: string;
+  body_richtext_v2?: string;
   c_cards?: CardProfile[];
   c_boardParentFolder?: FolderProfile[];
 }
